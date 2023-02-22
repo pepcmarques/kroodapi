@@ -12,6 +12,11 @@ from .serializers import ItemSerializer
 
 
 class LoginView(APIView):
+    """
+    See:
+        - https://www.guguweb.com/2022/01/23/django-rest-framework-authentication-the-easy-way/
+        - https://www.geeksforgeeks.org/basic-authentication-django-rest-framework/
+    """
     def post(self, request):
         username = request.data["username"]
         password = request.data["password"]
